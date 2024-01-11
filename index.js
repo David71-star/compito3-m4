@@ -1,4 +1,4 @@
-const url = "https://api.pexels.com/v1/search?query=gaming";
+const url = "https://api.pexels.com/v1/search?query=tuning";
 
 let container = document.querySelector(".container");
 
@@ -24,6 +24,7 @@ const fetchImg = () =>
     </div>`;
         })
         .join("");
-    });
+    })
+    .catch((err) => console.error(err));
 
 fetchImg();
